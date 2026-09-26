@@ -91,7 +91,11 @@ TXT
   artifact="dist/$name.zip"
 elif [ "$os" = windows ]; then
   cp "$app" "$out/"
-  (cd dist && zip -qr "$name.zip" "$name") || status=$?
+  # The Windows runner's bash has no zip(1). Compress-Archive ships with
+  # PowerShell itself, so this needs nothing installed and writes the same
+  # archive layout as `zip -r` run from inside dist.
+  powershell -NoProfile -Command \
+    "Compress-Archive -Path 'dist/$name' -DestinationPath 'dist/$name.zip' -Force" || status=$?
   artifact="dist/$name.zip"
 else
   cp "$app" "$out/"

@@ -353,7 +353,7 @@ fn indent_of(src: &str, at: usize) -> &str {
     let line = src[..at].rfind('\n').map_or(0, |i| i + 1);
     let end = src[line..at]
         .find(|c: char| !c.is_whitespace())
-        .map_or(at - line, |i| i);
+        .unwrap_or(at - line);
     &src[line..line + end]
 }
 
