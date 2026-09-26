@@ -1,0 +1,15 @@
+[package]
+name = "dom-front-metrics"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# Detached from the parent workspace for the same reason as core/: this is a
+# measurement, and it must not inherit a feature resolution from anything else.
+[workspace]
+
+[dependencies]
+# Through `draft-view`, so the numbers come from the same font policy the
+# application and the CLI measure with rather than a second copy of it.
+draft-view = { path = "../../../crates/view" }
+epaint = { version = "0.36.2", default-features = false }

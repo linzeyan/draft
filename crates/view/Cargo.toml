@@ -1,0 +1,23 @@
+[package]
+name = "draft-view"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Diagram geometry and shapes, independent of any window or GPU"
+
+[dependencies]
+draft-ddl = { path = "../ddl" }
+draft-geom = { path = "../geom" }
+draft-layout = { path = "../layout" }
+
+# epaint, not egui: this crate must build and test with no window, no event
+# loop and no GPU, and the CLI must lay text out with the same engine the GUI
+# uses or the two would disagree about geometry.
+#
+# `default_fonts` is deliberately off: most of epaint's bundled set is two emoji
+# faces worth 400 K that nothing here draws. The two faces this project does use
+# are registered by `fonts::definitions`, which every target calls, so the
+# policy lives in one place instead of once per binary (docs/architecture.md D4).
+epaint = { version = "0.36.2", default-features = false }
+epaint_default_fonts = "0.36.2"

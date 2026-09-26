@@ -1,0 +1,29 @@
+TABLE users  name@247..252  body@254..469
+  COL id             integer                      pk,nn        name@259..261  type@262..269
+  COL email          character varying(255)       nn,uq        name@284..289  type@290..312
+  COL display_name   text                         -            name@327..339  type@340..344
+  COL created_at     timestamp without time zone  nn           name@350..360  type@361..388
+  COL settings       jsonb                        -            name@417..425  type@426..431
+  COL tags           text[]                       -            name@457..461  type@462..468
+  IDX users_email_key unique   (email)
+  SELF users         @492..497
+  SELF users         @858..863
+  SELF users         @937..942
+  SELF users         @1186..1191
+  REF id             @907..909
+  REF email          @986..991
+  REF id             @1192..1194
+TABLE order  name@605..610  body@613..830
+  COL id             integer                      pk,nn        name@618..620  type@621..628
+  COL user_id        integer                      nn,fk        name@643..650  type@651..658
+  COL total          numeric(12,2)                nn           name@673..678  type@679..692
+  COL placed_at      timestamp with time zone     -            name@717..726  type@727..751
+  COL note           text                         -            name@757..761  type@762..766
+  IDX order_user_id_idx -        (user_id)
+  SELF order         @1020..1025
+  SELF order         @1101..1106
+  SELF order         @1258..1263
+  REF id             @1070..1072
+  REF user_id        @1159..1166
+  REF user_id        @1278..1285
+REL order(user_id) -> users(id)  1:n

@@ -1,0 +1,29 @@
+[package]
+name = "dom-front-core"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# Detached from the parent workspace on purpose: cargo unifies features across
+# workspace members, and this measurement is only meaningful if nothing in the
+# graph has been pulled in by the application crate's feature set.
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+draft-ddl = { path = "../../../crates/ddl" }
+draft-layout = { path = "../../../crates/layout" }
+draft-model = { path = "../../../crates/model" }
+# Pinned to the version trunk's own tool cache carries, so the number here is
+# directly comparable to the shipped bundle rather than to a different bindgen.
+wasm-bindgen = "=0.2.128"
+
+# The same settings the workspace ships with, minus `panic` — the workspace does
+# not set it either, and turning it off here would measure a build we do not make.
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+strip = true

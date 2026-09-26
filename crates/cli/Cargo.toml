@@ -1,0 +1,23 @@
+[package]
+name = "draft-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Render a SQL schema to a diagram from the command line"
+
+[[bin]]
+name = "draft"
+path = "src/main.rs"
+
+[dependencies]
+draft-ddl = { path = "../ddl" }
+draft-layout = { path = "../layout" }
+draft-view = { path = "../view" }
+draft-export = { path = "../export" }
+
+# `default_fonts` off, like everywhere else: the faces come from
+# `draft_view::fonts`, so the CLI measures and draws with exactly what the
+# application does. A diagram that differs between the two is a bug report
+# nobody can reproduce (docs/architecture.md D4).
+epaint = { version = "0.36.2", default-features = false }

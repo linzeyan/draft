@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>draft — read a SQL schema as an ER diagram</title>
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- The two faces epaint hands the CLI. Loaded here rather than left to the
+         system stack because the browser's measurements decide where every box
+         goes: a machine that substituted a different face would lay the diagram
+         out differently from the same schema rendered by `draft render`, and
+         from the same share link opened next door. -->
+    <style>
+      @font-face {
+        font-family: "draft-ui";
+        src: url("./Ubuntu-Light.ttf") format("truetype");
+        font-display: block;
+      }
+      @font-face {
+        font-family: "draft-mono";
+        src: url("./Hack-Regular.ttf") format("truetype");
+        font-display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Text, in the page, from the first byte: the thing a canvas cannot have
+         (docs/architecture.md D19). The heading is the document's, not a
+         decoration. -->
+    <h1 class="sr-only">draft</h1>
+    <p id="status">Loading…</p>
+    <main id="split">
+      <section id="pane">
+        <label class="sr-only" for="sql">SQL schema</label>
+        <!-- The text, and then the colours over it. In that order, and the
+             order matters: a selection highlight and an IME composition are
+             both painted *with* the textarea, and both are filled rectangles.
+             With the textarea on top they cover the coloured glyphs — a
+             composition comes out as a solid yellow block with nothing legible
+             in it, which is measurably what happens (S5e). Underneath, they
+             show through the colour layer's transparent background and the
+             text stays readable on top of them.
+
+             `aria-hidden` because the colour layer is a duplicate of the
+             textarea's value, and a screen reader that found both would read
+             the schema twice. -->
+        <textarea
+          id="sql"
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          wrap="off"
+        ></textarea>
+        <pre id="ink" aria-hidden="true"></pre>
+      </section>
+      <svg id="diagram" role="img" aria-labelledby="caption">
+        <title id="caption">The schema, drawn as an ER diagram</title>
+      </svg>
+    </main>
+    <script type="module" src="./main.mjs"></script>
+  </body>
+</html>

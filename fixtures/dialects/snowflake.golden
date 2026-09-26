@@ -1,0 +1,15 @@
+TABLE ACCOUNT  name@163..170  body@172..318
+  COL ACCOUNT_ID     number(38,0)                 pk,nn        name@177..187  type@190..202
+  COL NAME           varchar(256)                 -            name@229..233  type@242..254
+  COL CREATED_AT     timestamp_ntz(9)             -            name@260..270  type@273..289
+  SELF account       @713..720
+  REF account_id     @722..732
+TABLE EVENT_LOG  name@366..375  body@377..734
+  COL EVENT_ID       number(38,0)                 pk,nn        name@382..390  type@395..407
+  COL ACCOUNT_ID     number(38,0)                 fk           name@422..432  type@435..447
+  COL EVENT_TYPE     varchar(64)                  -            name@453..463  type@466..477
+  COL PAYLOAD        variant                      -            name@483..490  type@496..503
+  COL LOADED_AT      timestamp_ntz(9)             -            name@509..518  type@522..538
+  REF event_id       @609..617
+  REF account_id     @665..675
+REL EVENT_LOG(ACCOUNT_ID) -> ACCOUNT(ACCOUNT_ID)  1:n

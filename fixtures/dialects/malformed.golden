@@ -1,0 +1,13 @@
+TABLE good_one  name@217..225  body@227..262
+  COL id             int                          pk           name@230..232  type@233..236
+  COL name           text                         -            name@252..256  type@257..261
+TABLE dup  name@330..333  body@361..366
+  COL a              int                          -            name@335..336  type@337..340
+  COL b              int                          -            name@361..362  type@363..366
+  SELF dup           @356..359
+TABLE truncated  name@383..392  body@394..417
+  COL id             int                          -            name@397..399  type@400..403
+  COL name           text                         -            name@407..411  type@412..416
+WARN @266..272  CREATE TABLE without a table name
+WARN @356..359  table "dup" is created more than once; definitions are merged
+WARN @383..392  unbalanced parentheses in table "truncated"

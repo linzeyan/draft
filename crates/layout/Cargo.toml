@@ -1,0 +1,19 @@
+[package]
+name = "draft-layout"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Layered graph layout for schema diagrams"
+
+[dependencies]
+draft-ddl = { path = "../ddl" }
+dugong = "0.8.0-alpha.6"
+serde = { version = "1", features = ["derive"], optional = true }
+
+# Off by default, and deliberately: `Placement` is persisted by the desktop and
+# canvas builds, which turn this on, while `draft-front` depends on this crate
+# and has no serde in its tree at all — a property its Cargo.toml states and the
+# payload budget is the reason for.
+[features]
+serde = ["dep:serde"]

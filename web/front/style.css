@@ -1,0 +1,289 @@
+/* The dark theme's own values, copied from `Theme::dark()` in
+   crates/view/src/lib.rs rather than re-picked by eye: the DOM front end has to
+   be comparable with the canvas build and with the CLI's SVG, and "nearly the
+   same grey" is how a comparison stops meaning anything.
+
+   They are custom properties because stage b gives this a light theme too, and
+   a theme switch that rewrote rules instead of values would be a rewrite of
+   this file. */
+:root {
+  --background: #15181d;
+  --table-fill: #1e232b;
+  --table-stroke: #38404c;
+  --header-fill: #2a313b;
+  --header-text: #ecf0f5;
+  --column-text: #c4ccd6;
+  --text-secondary: #98a3b0;
+  --type-text: #788493;
+  --key-text: #d8a550;
+  --edge: #4e5a68;
+  --edge-dangling: #9c5555;
+
+  /* `Syntax::dark()`, same crate, same reason. One per `draft_ddl::Token`,
+     in the enum's own order. */
+  --editor-bg: #1a1e25;
+  --t-plain: #c4ccd6;
+  --t-keyword: #5aa7ff;
+  --t-type: #7dd3a0;
+  --t-literal: #e5a06b;
+  --t-quoted: #c09cf0;
+  --t-comment: #6f7b8a;
+  --t-number: #f5c451;
+  --t-punct: #8a95a3;
+  --selection: #2f4a6b;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--background);
+  color: var(--column-text);
+  font: 13px/1.4 "draft-ui", system-ui, sans-serif;
+}
+
+/* Present for a reader and for a crawler, out of the way for everyone else:
+   the page is a diagram and an editor, and a title above them would only be
+   furniture. Clipped rather than hidden, because `display: none` takes it out
+   of the accessibility tree as well as out of sight (D21) — which is exactly
+   what the SQL pane's label must not do. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+#status {
+  position: absolute;
+  inset: auto 12px 8px 12px;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-align: right;
+  pointer-events: none;
+}
+
+/* The split. `420px` is the canvas build's own default pane width
+   (`Panel::left("editor").default_size(420.0)`), and `900px` is its `NARROW`
+   — the width it measured the two-pane layout as stopping being a layout at.
+   There it responds by closing the pane from Rust on the frame the window
+   resizes; here the layout answers for itself, which is one of the things D19
+   holds against a canvas. */
+#split {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  #split {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 45%) 1fr;
+  }
+}
+
+#pane {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  background: var(--editor-bg);
+  border-right: 1px solid var(--table-stroke);
+}
+
+/* The two layers are one text in two colours, so every property that decides
+   where a glyph lands is set once, here. A difference of a tenth of a pixel in
+   padding or of one in `line-height` slides the colours off the characters,
+   further with every line. */
+#ink,
+#sql {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 12px;
+  border: 0;
+  font: 12.5px/18px "draft-mono", ui-monospace, monospace;
+  /* `pre`, not `pre-wrap`: a wrapped line is no longer at a predictable
+     multiple of the line height, and the window the wasm is asked for is
+     computed from exactly that. `wrap="off"` says the same to the textarea. */
+  white-space: pre;
+  tab-size: 4;
+}
+
+#ink {
+  /* Painted by `editor.mjs`, which moves it with `transform`. Clipped rather
+     than scrolled: the textarea above owns the scrolling, and a second
+     scrollable box would need its offsets kept in step to the pixel. */
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--t-plain);
+  will-change: transform;
+}
+
+#sql {
+  background: transparent;
+  /* The glyphs are the ink layer's. What is left of the textarea is everything
+     a text field is for: the caret, the selection, the scroll position, the
+     clipboard, the IME, and a node in the accessibility tree. */
+  color: transparent;
+  caret-color: var(--column-text);
+  resize: none;
+  overflow: auto;
+}
+
+#sql:focus {
+  outline: none;
+}
+
+#sql::selection {
+  background: var(--selection);
+}
+
+.t-plain {
+  color: var(--t-plain);
+}
+.t-keyword {
+  color: var(--t-keyword);
+}
+.t-type {
+  color: var(--t-type);
+}
+.t-literal {
+  color: var(--t-literal);
+}
+.t-quoted {
+  color: var(--t-quoted);
+}
+.t-comment {
+  color: var(--t-comment);
+}
+.t-number {
+  color: var(--t-number);
+}
+.t-punct {
+  color: var(--t-punct);
+}
+
+#diagram {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  /* Every gesture over the diagram is this application's own, as it is in the
+     canvas build (D22). A browser that has already started a scroll cannot be
+     talked out of it, and on Android the document-level `touchmove` listener
+     that would have called `preventDefault` is registered passive. */
+  touch-action: none;
+  cursor: grab;
+}
+
+#diagram.dragging {
+  cursor: grabbing;
+}
+
+.table {
+  cursor: pointer;
+}
+
+/* A table drawn as one rectangle, at the zoom where its text would be a grey
+   smear. The header colour rather than the body colour, so a diagram pulled
+   right out reads as solid blocks — `table_shapes`' own choice at Lod::Block. */
+.block {
+  fill: var(--header-fill);
+  stroke: var(--table-stroke);
+  stroke-width: 1;
+}
+
+/* Focus: one table and its immediate neighbourhood, with everything else
+   pushed back.
+
+   The canvas build paints a translucent veil over the diagram and then redraws
+   the neighbourhood on top, because a painter has no other way to say
+   "everything except these". Opacity on the elements that are *not* the answer
+   says it directly, and costs one class instead of a second copy of every
+   shape.
+
+   Dimmed is not unclickable: the canvas build hit-tests every table whether or
+   not the veil is over it, so a click can move the pin straight to a
+   neighbour instead of having to clear it first. */
+#world.focusing .table {
+  opacity: 0.22;
+}
+
+#world.focusing .edge-group {
+  opacity: 0.15;
+}
+
+#world.focusing .table.lit,
+#world.focusing .edge-group.lit {
+  opacity: 1;
+}
+
+/* One class per thing the theme names, so that what a table box is made of
+   reads the same here as in `table_shapes`. */
+.box {
+  fill: var(--table-fill);
+  stroke: var(--table-stroke);
+  stroke-width: 1;
+}
+
+.header-fill {
+  fill: var(--header-fill);
+}
+
+.header-text {
+  fill: var(--header-text);
+  font-size: 14px;
+}
+
+.name {
+  fill: var(--column-text);
+  font-size: 12.5px;
+}
+
+/* A nullable column is drawn a shade back from a required one — no marker and
+   no extra column, for the reasons D16 gives. */
+.name.null {
+  fill: var(--text-secondary);
+}
+
+.type {
+  fill: var(--type-text);
+  font-family: "draft-mono", ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.badge {
+  fill: var(--key-text);
+  font-size: 9.5px;
+}
+
+.index-name {
+  fill: var(--text-secondary);
+  font-family: "draft-mono", ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.index-rule {
+  stroke: var(--table-stroke);
+  stroke-width: 1;
+}
+
+/* Curve and cardinality marks share the class: they are one edge, and an edge
+   whose foot was a different colour from its line would read as two things. */
+.edge {
+  fill: none;
+  stroke: var(--edge);
+  stroke-width: 1.2;
+}
+
+/* A reference to a table the script never declares. Red enough to be a
+   question, not so red as to be an error — the schema may simply be partial. */
+.edge.dangling {
+  stroke: var(--edge-dangling);
+}

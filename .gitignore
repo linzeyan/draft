@@ -1,0 +1,9 @@
+# Unanchored: the spikes under spikes/ carry their own target/ and dist/, and a
+# root-anchored pattern silently misses them.
+target/
+dist/
+/.scratch
+node_modules
+*.wasm
+.DS_Store
+/docs

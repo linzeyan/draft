@@ -1,0 +1,112 @@
+Third-party code and attribution
+================================
+
+This project is MIT licensed. The notices below are obligations, not
+courtesies: each covers code that was ported rather than merely read.
+
+
+sql-to-er-diagram (sqltoerdiagram)
+----------------------------------
+
+MIT License
+Copyright (c) 2026 Royal Bhati
+
+Ported to Rust in this project:
+
+  crates/ddl/src/scan.rs   — the span-preserving scanning strategy from
+                             src/parser.js: blanking comments to equal-length
+                             whitespace so byte offsets stay valid, splitting
+                             statements and clause lists at top level only, and
+                             carrying a byte span on every identifier token.
+  crates/ddl/src/stmt.rs   — the statement and clause recognition it drives.
+  crates/layout/src/lib.rs — the hub-aware edge weighting from src/layout.js.
+  crates/view/src/lib.rs   — the table box metrics from measureTable().
+
+The Rust code is a reimplementation, not a transliteration: it works on bytes
+rather than UTF-16 code units, replaces the regular expressions with a token
+scan, and records references the original does not. The ideas above are the
+upstream author's.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Test fixtures
+-------------
+
+fixtures/real/ holds two schemas dumped by `pg_dump` and `mysqldump` for other
+people's purposes. They are here precisely because we did not write them: a
+fixture we author can only confirm what we already believe. Both found real
+defects the first time they were parsed.
+
+  fixtures/real/pagila-pg_dump.sql
+    Pagila, Copyright (c) Devrim Gündüz <devrim@gunduz.org>, MIT licence
+    (LICENSE.txt in github.com/devrimgunduz/pagila). A PostgreSQL port of
+    Sakila. Unmodified.
+
+  fixtures/real/sakila-mysqldump.sql
+    Sakila Sample Database, Copyright (c) 2006 MySQL AB, BSD 3-Clause. The
+    licence text is carried in the file's own header. Unmodified.
+
+
+Fonts
+-----
+
+The web and desktop builds embed two typefaces, taken unmodified from the
+`epaint_default_fonts` crate rather than vendored here, so the upstream licence
+files travel with the dependency. They are redistributed in the compiled
+binary, which is what makes these notices obligations.
+
+  Ubuntu Light — Ubuntu Font Licence 1.0, Copyright 2010,2011 Canonical Ltd.
+    Used for all proportional text. Unmodified; no derivative is produced, so
+    the licence's renaming requirement does not arise.
+
+  Hack Regular — MIT, Copyright 2018 Source Foundry Authors; derived from
+    DejaVu (public domain) and Bitstream Vera Sans Mono, Copyright 2003
+    Bitstream Inc., Bitstream Vera Licence with Reserved Font Names
+    "Bitstream" and "Vera". Used for type names and any monospaced text.
+    Unmodified.
+
+Full texts ship with the crate, as `fonts/UFL.txt` and `fonts/Hack-Regular.txt`
+under `epaint_default_fonts`. egui's two bundled emoji faces are deliberately
+not registered — see docs/architecture.md D4.
+
+A third typeface is vendored in this repository, because it is registered only
+when a schema needs it and so cannot come from a crate that is compiled in
+unconditionally:
+
+  Noto Sans CJK TC Regular — SIL Open Font Licence 1.1, Copyright 2014-2021
+    Adobe (github.com/adobe-fonts/source-han-sans), with Reserved Font Name
+    "Source". Used for Han, kana, Hangul and Bopomofo text in schemas and
+    comments. Unmodified.
+
+  crates/view/assets/NotoSansCJKtc-Regular.otf
+  crates/view/assets/NotoSansCJK-LICENSE.txt  — the full OFL 1.1 text
+
+The web build serves the file rather than compiling it in, so it is
+redistributed both ways; the licence file above is copied into `dist/` alongside
+it.
+
+
+drawDB — deliberately absent
+----------------------------
+
+drawDB is AGPL-3.0. It was read for architectural comparison only
+(docs/comparison.md). No code from it is present here, in any form, including
+translated. This is recorded so the absence is visible rather than assumed —
+see docs/risks.md R9.

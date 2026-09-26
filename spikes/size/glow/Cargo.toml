@@ -1,0 +1,22 @@
+[package]
+name = "size-glow"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+# Detached from the parent workspace on purpose: cargo unifies features across
+# workspace members, which would silently merge the glow and wgpu feature sets
+# and make every number here wrong.
+[workspace]
+
+[dependencies]
+eframe = { version = "0.36.2", default-features = false, features = ["glow"] }
+wasm-bindgen-futures = "0.4"
+web-sys = { version = "0.3", features = ["Window", "Document", "Element", "HtmlCanvasElement"] }
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true

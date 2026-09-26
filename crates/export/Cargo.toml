@@ -1,0 +1,25 @@
+[package]
+name = "draft-export"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "SVG output from the diagram's own shapes"
+
+[dependencies]
+epaint = { version = "0.36.2", default-features = false }
+# Pure Rust, so it builds for wasm32 without a C toolchain — which rules out the
+# libwebp bindings. It encodes VP8L only, and lossless is what a diagram wants
+# anyway (see `webp`).
+image-webp = "0.2"
+# Already in the tree by way of eframe's window-icon handling, so a PNG encoder
+# costs the payload budget only the encoder itself.
+png = "0.18"
+
+[dev-dependencies]
+draft-ddl = { path = "../ddl" }
+draft-layout = { path = "../layout" }
+draft-view = { path = "../view" }
+# No `default_fonts`: the tests measure with the faces that ship, through
+# `draft_view::fonts::definitions`.
+epaint = { version = "0.36.2", default-features = false }

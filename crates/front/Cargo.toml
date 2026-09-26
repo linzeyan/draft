@@ -1,0 +1,25 @@
+[package]
+name = "draft-front"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "The wasm core the DOM front end talks to: parse, measure, place, splice"
+
+# A cdylib because nothing links this as a Rust library: the only consumer is
+# wasm-bindgen's glue. The `lib` alongside it is what lets `cargo test` see the
+# tests.
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+draft-ddl = { path = "../ddl" }
+draft-geom = { path = "../geom" }
+draft-layout = { path = "../layout" }
+draft-model = { path = "../model" }
+
+# The only third-party dependency, and no `serde`: the numbers cross as typed
+# arrays and the schema crosses as JSON this crate writes by hand in thirty
+# lines. A serde/serde_json pair on this side of the wall would be weight in the
+# one artefact that has a size budget (docs/architecture.md D19, spike S5a).
+wasm-bindgen = "0.2"

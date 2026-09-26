@@ -1,0 +1,15 @@
+[package]
+name = "draft-geom"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Table box arithmetic, shared by every front end and independent of any font engine"
+
+# No epaint, and that is the whole point: this is the arithmetic a browser that
+# measures its own text needs, and carrying a font engine into that wasm module
+# would cost the 76% of the payload the DOM front end exists to drop
+# (docs/architecture.md D19).
+[dependencies]
+draft-ddl = { path = "../ddl" }
+draft-layout = { path = "../layout" }

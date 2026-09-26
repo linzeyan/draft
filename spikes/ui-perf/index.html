@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ui-perf</title>
+    <style>
+      /* A fixed pixel size, deliberately matching the native window.
+
+         eframe drives the canvas backing store from a ResizeObserver on the
+         canvas's displayed size. A canvas with no CSS size takes its layout
+         size FROM that backing store, so the two feed each other and the canvas
+         grows without bound -- it reached 16777216px here before this was
+         pinned down. Percentage sizes only halve the problem rather than
+         removing it.
+
+         A benchmark wants fixed, known geometry regardless: this is the same
+         1400x900 the native run uses, so the two measure the same workload. */
+      html, body { margin: 0; padding: 0; overflow: hidden; background: #0e1116; }
+      canvas { display: block; width: 1400px; height: 900px; }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <link data-trunk rel="rust" data-wasm-opt="0" />
+  </body>
+</html>

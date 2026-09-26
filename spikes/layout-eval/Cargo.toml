@@ -1,0 +1,13 @@
+[package]
+name = "layout-eval"
+version = "0.0.0"
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+dagre = "0.1.1"
+dugong = "0.8.0-alpha.6"
+rust-sugiyama = "0.4.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

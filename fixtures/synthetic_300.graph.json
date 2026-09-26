@@ -1,0 +1,3906 @@
+{
+ "nodes": [
+  {
+   "id": "staging_task_snapshot",
+   "w": 283,
+   "h": 138
+  },
+  {
+   "id": "policy_item",
+   "w": 244,
+   "h": 164
+  },
+  {
+   "id": "archived_document",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "v2_warehouse",
+   "w": 291,
+   "h": 164
+  },
+  {
+   "id": "v2_vehicle",
+   "w": 293,
+   "h": 164
+  },
+  {
+   "id": "archived_order_meta",
+   "w": 210,
+   "h": 268
+  },
+  {
+   "id": "invoice",
+   "w": 291,
+   "h": 242
+  },
+  {
+   "id": "staging_order",
+   "w": 244,
+   "h": 112
+  },
+  {
+   "id": "legacy_attachment_item",
+   "w": 235,
+   "h": 216
+  },
+  {
+   "id": "invoice_audit",
+   "w": 221,
+   "h": 242
+  },
+  {
+   "id": "session",
+   "w": 229,
+   "h": 138
+  },
+  {
+   "id": "v2_category_audit",
+   "w": 193,
+   "h": 112
+  },
+  {
+   "id": "warehouse",
+   "w": 202,
+   "h": 242
+  },
+  {
+   "id": "v2_notification_config",
+   "w": 268,
+   "h": 268
+  },
+  {
+   "id": "external_project_config",
+   "w": 307,
+   "h": 242
+  },
+  {
+   "id": "account_line",
+   "w": 268,
+   "h": 138
+  },
+  {
+   "id": "staging_refund",
+   "w": 187,
+   "h": 86
+  },
+  {
+   "id": "external_inventory_link",
+   "w": 338,
+   "h": 372
+  },
+  {
+   "id": "staging_tag",
+   "w": 225,
+   "h": 268
+  },
+  {
+   "id": "staging_refund_history",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "vehicle_item",
+   "w": 314,
+   "h": 164
+  },
+  {
+   "id": "task_snapshot",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "external_discount_history",
+   "w": 268,
+   "h": 164
+  },
+  {
+   "id": "shipment_link",
+   "w": 218,
+   "h": 268
+  },
+  {
+   "id": "archived_refund",
+   "w": 322,
+   "h": 372
+  },
+  {
+   "id": "archived_customer_config",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "v2_notification",
+   "w": 291,
+   "h": 138
+  },
+  {
+   "id": "session_line",
+   "w": 314,
+   "h": 268
+  },
+  {
+   "id": "v2_discount_item",
+   "w": 221,
+   "h": 268
+  },
+  {
+   "id": "legacy_customer_snapshot",
+   "w": 252,
+   "h": 138
+  },
+  {
+   "id": "template_meta",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "external_ticket_meta",
+   "w": 322,
+   "h": 216
+  },
+  {
+   "id": "order_link",
+   "w": 232,
+   "h": 190
+  },
+  {
+   "id": "inventory_line",
+   "w": 244,
+   "h": 320
+  },
+  {
+   "id": "carrier_audit",
+   "w": 268,
+   "h": 138
+  },
+  {
+   "id": "payment_audit",
+   "w": 314,
+   "h": 216
+  },
+  {
+   "id": "legacy_project_history",
+   "w": 330,
+   "h": 268
+  },
+  {
+   "id": "legacy_contract_snapshot",
+   "w": 268,
+   "h": 216
+  },
+  {
+   "id": "legacy_vehicle_audit",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "vendor_item",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "v2_ticket",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "product_item",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "staging_ticket_history",
+   "w": 299,
+   "h": 346
+  },
+  {
+   "id": "v2_refund_detail",
+   "w": 275,
+   "h": 190
+  },
+  {
+   "id": "category_audit",
+   "w": 330,
+   "h": 294
+  },
+  {
+   "id": "external_task",
+   "w": 159,
+   "h": 86
+  },
+  {
+   "id": "archived_ticket_line",
+   "w": 225,
+   "h": 216
+  },
+  {
+   "id": "external_asset_snapshot",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "v2_invoice",
+   "w": 221,
+   "h": 190
+  },
+  {
+   "id": "staging_audit_detail",
+   "w": 268,
+   "h": 346
+  },
+  {
+   "id": "archived_booking_snapshot",
+   "w": 307,
+   "h": 138
+  },
+  {
+   "id": "staging_contract_history",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "v2_contract_config",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "shipment_meta",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "inventory",
+   "w": 213,
+   "h": 112
+  },
+  {
+   "id": "task_audit",
+   "w": 277,
+   "h": 294
+  },
+  {
+   "id": "archived_message",
+   "w": 314,
+   "h": 190
+  },
+  {
+   "id": "staging_task_history",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "legacy_vendor_item",
+   "w": 283,
+   "h": 112
+  },
+  {
+   "id": "staging_inventory_audit",
+   "w": 268,
+   "h": 164
+  },
+  {
+   "id": "v2_task",
+   "w": 283,
+   "h": 138
+  },
+  {
+   "id": "customer_review",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "category_history",
+   "w": 322,
+   "h": 268
+  },
+  {
+   "id": "notification_audit",
+   "w": 252,
+   "h": 268
+  },
+  {
+   "id": "external_channel_meta",
+   "w": 233,
+   "h": 268
+  },
+  {
+   "id": "staging_attachment_audit",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "shipment",
+   "w": 268,
+   "h": 216
+  },
+  {
+   "id": "v2_audit_audit",
+   "w": 254,
+   "h": 216
+  },
+  {
+   "id": "department_line",
+   "w": 268,
+   "h": 164
+  },
+  {
+   "id": "archived_policy",
+   "w": 268,
+   "h": 190
+  },
+  {
+   "id": "external_inventory_audit",
+   "w": 283,
+   "h": 346
+  },
+  {
+   "id": "external_audit_audit",
+   "w": 262,
+   "h": 216
+  },
+  {
+   "id": "asset_detail",
+   "w": 283,
+   "h": 242
+  },
+  {
+   "id": "v2_claim_audit",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "external_channel_item",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "v2_category_line",
+   "w": 268,
+   "h": 294
+  },
+  {
+   "id": "discount_line",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "staging_tag_meta",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "v2_customer_item",
+   "w": 229,
+   "h": 242
+  },
+  {
+   "id": "legacy_inventory_meta",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "external_claim_history",
+   "w": 307,
+   "h": 268
+  },
+  {
+   "id": "legacy_discount_link",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "legacy_booking_link",
+   "w": 330,
+   "h": 138
+  },
+  {
+   "id": "payment",
+   "w": 330,
+   "h": 216
+  },
+  {
+   "id": "legacy_tag_snapshot",
+   "w": 322,
+   "h": 294
+  },
+  {
+   "id": "order_item",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "category_meta",
+   "w": 283,
+   "h": 242
+  },
+  {
+   "id": "external_contract",
+   "w": 262,
+   "h": 268
+  },
+  {
+   "id": "document_item",
+   "w": 230,
+   "h": 216
+  },
+  {
+   "id": "v2_policy_history",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "message_link",
+   "w": 254,
+   "h": 242
+  },
+  {
+   "id": "ticket_config",
+   "w": 260,
+   "h": 112
+  },
+  {
+   "id": "archived_contract_meta",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "v2_attachment_line",
+   "w": 236,
+   "h": 190
+  },
+  {
+   "id": "archived_asset",
+   "w": 244,
+   "h": 320
+  },
+  {
+   "id": "archived_project_snapshot",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "legacy_shipment_leg",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "staging_audit",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "customer_meta",
+   "w": 275,
+   "h": 216
+  },
+  {
+   "id": "staging_ticket_config",
+   "w": 229,
+   "h": 112
+  },
+  {
+   "id": "v2_order_config",
+   "w": 211,
+   "h": 242
+  },
+  {
+   "id": "archived_campaign_snapshot",
+   "w": 269,
+   "h": 242
+  },
+  {
+   "id": "session_audit",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "archived_shipment",
+   "w": 330,
+   "h": 268
+  },
+  {
+   "id": "document_audit",
+   "w": 241,
+   "h": 112
+  },
+  {
+   "id": "legacy_audit",
+   "w": 215,
+   "h": 164
+  },
+  {
+   "id": "archived_contract",
+   "w": 322,
+   "h": 190
+  },
+  {
+   "id": "archived_task_history",
+   "w": 236,
+   "h": 138
+  },
+  {
+   "id": "legacy_order_snapshot",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "legacy_campaign_audit",
+   "w": 268,
+   "h": 190
+  },
+  {
+   "id": "v2_invoice_snapshot",
+   "w": 229,
+   "h": 242
+  },
+  {
+   "id": "v2_attachment",
+   "w": 179,
+   "h": 112
+  },
+  {
+   "id": "staging_document_audit",
+   "w": 322,
+   "h": 320
+  },
+  {
+   "id": "legacy_route",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "audit",
+   "w": 275,
+   "h": 268
+  },
+  {
+   "id": "v2_review_item",
+   "w": 360,
+   "h": 242
+  },
+  {
+   "id": "external_document",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "legacy_task_history",
+   "w": 221,
+   "h": 138
+  },
+  {
+   "id": "notification_meta",
+   "w": 299,
+   "h": 372
+  },
+  {
+   "id": "policy_history",
+   "w": 291,
+   "h": 242
+  },
+  {
+   "id": "staging_vehicle_snapshot",
+   "w": 252,
+   "h": 190
+  },
+  {
+   "id": "external_carrier_config",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "external_attachment",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "external_order_history",
+   "w": 283,
+   "h": 372
+  },
+  {
+   "id": "v2_message_item",
+   "w": 314,
+   "h": 268
+  },
+  {
+   "id": "legacy_review_meta",
+   "w": 217,
+   "h": 190
+  },
+  {
+   "id": "employee_link",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "campaign_meta",
+   "w": 268,
+   "h": 320
+  },
+  {
+   "id": "v2_carrier_line",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "v2_account_link",
+   "w": 244,
+   "h": 268
+  },
+  {
+   "id": "vehicle_snapshot",
+   "w": 229,
+   "h": 164
+  },
+  {
+   "id": "legacy_tag_meta",
+   "w": 291,
+   "h": 216
+  },
+  {
+   "id": "legacy_policy_config",
+   "w": 268,
+   "h": 190
+  },
+  {
+   "id": "staging_invoice_meta",
+   "w": 252,
+   "h": 164
+  },
+  {
+   "id": "legacy_vehicle_snapshot",
+   "w": 244,
+   "h": 86
+  },
+  {
+   "id": "staging_payment_config",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "v2_notification_audit",
+   "w": 338,
+   "h": 190
+  },
+  {
+   "id": "v2_discount_detail",
+   "w": 283,
+   "h": 216
+  },
+  {
+   "id": "invoice_shipment",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "external_account",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "channel_meta",
+   "w": 252,
+   "h": 138
+  },
+  {
+   "id": "department_tag",
+   "w": 202,
+   "h": 138
+  },
+  {
+   "id": "subscription_link",
+   "w": 330,
+   "h": 164
+  },
+  {
+   "id": "booking_meta",
+   "w": 338,
+   "h": 294
+  },
+  {
+   "id": "staging_project_meta",
+   "w": 283,
+   "h": 138
+  },
+  {
+   "id": "staging_subscription",
+   "w": 233,
+   "h": 294
+  },
+  {
+   "id": "v2_inventory_config",
+   "w": 283,
+   "h": 138
+  },
+  {
+   "id": "legacy_vehicle_line",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "external_discount_link",
+   "w": 283,
+   "h": 216
+  },
+  {
+   "id": "external_asset_config",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "vendor_config",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "external_account_meta",
+   "w": 322,
+   "h": 190
+  },
+  {
+   "id": "external_campaign_config",
+   "w": 252,
+   "h": 138
+  },
+  {
+   "id": "external_warehouse_audit",
+   "w": 252,
+   "h": 164
+  },
+  {
+   "id": "warehouse_config",
+   "w": 226,
+   "h": 86
+  },
+  {
+   "id": "asset_line",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "route_snapshot",
+   "w": 226,
+   "h": 190
+  },
+  {
+   "id": "staging_discount_meta",
+   "w": 252,
+   "h": 242
+  },
+  {
+   "id": "legacy_booking_history",
+   "w": 236,
+   "h": 216
+  },
+  {
+   "id": "v2_booking_line",
+   "w": 230,
+   "h": 190
+  },
+  {
+   "id": "notification_line",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "product_meta",
+   "w": 229,
+   "h": 138
+  },
+  {
+   "id": "task_link",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "v2_ticket_item",
+   "w": 299,
+   "h": 268
+  },
+  {
+   "id": "contract_meta",
+   "w": 221,
+   "h": 112
+  },
+  {
+   "id": "external_category_config",
+   "w": 307,
+   "h": 268
+  },
+  {
+   "id": "session_meta",
+   "w": 268,
+   "h": 164
+  },
+  {
+   "id": "external_department_line",
+   "w": 252,
+   "h": 138
+  },
+  {
+   "id": "external_route",
+   "w": 268,
+   "h": 112
+  },
+  {
+   "id": "archived_shipment_audit",
+   "w": 244,
+   "h": 190
+  },
+  {
+   "id": "staging_carrier_audit",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "staging_refund_snapshot",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "refund_line",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "staging_task_item",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "session_snapshot",
+   "w": 184,
+   "h": 112
+  },
+  {
+   "id": "vehicle_history",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "v2_route_line",
+   "w": 230,
+   "h": 216
+  },
+  {
+   "id": "project",
+   "w": 338,
+   "h": 242
+  },
+  {
+   "id": "product_line",
+   "w": 338,
+   "h": 320
+  },
+  {
+   "id": "staging_task_line",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "v2_task_line",
+   "w": 244,
+   "h": 320
+  },
+  {
+   "id": "route_item",
+   "w": 268,
+   "h": 268
+  },
+  {
+   "id": "archived_employee",
+   "w": 330,
+   "h": 216
+  },
+  {
+   "id": "channel_audit",
+   "w": 314,
+   "h": 398
+  },
+  {
+   "id": "staging_discount",
+   "w": 229,
+   "h": 268
+  },
+  {
+   "id": "shipment_leg_history",
+   "w": 218,
+   "h": 112
+  },
+  {
+   "id": "department",
+   "w": 322,
+   "h": 216
+  },
+  {
+   "id": "legacy_department",
+   "w": 236,
+   "h": 242
+  },
+  {
+   "id": "archived_ticket",
+   "w": 229,
+   "h": 216
+  },
+  {
+   "id": "v2_message_config",
+   "w": 314,
+   "h": 190
+  },
+  {
+   "id": "external_campaign_link",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "external_review",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "shipment_leg_link",
+   "w": 224,
+   "h": 190
+  },
+  {
+   "id": "booking_link",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "category",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "shipment_item",
+   "w": 283,
+   "h": 216
+  },
+  {
+   "id": "external_claim",
+   "w": 196,
+   "h": 138
+  },
+  {
+   "id": "archived_order_config",
+   "w": 227,
+   "h": 164
+  },
+  {
+   "id": "external_shipment_leg_detail",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "staging_vehicle_meta",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "discount_link",
+   "w": 260,
+   "h": 268
+  },
+  {
+   "id": "legacy_attachment",
+   "w": 193,
+   "h": 164
+  },
+  {
+   "id": "review",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "staging_vehicle_audit",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "legacy_contract_history",
+   "w": 268,
+   "h": 320
+  },
+  {
+   "id": "external_category_history",
+   "w": 268,
+   "h": 112
+  },
+  {
+   "id": "task_meta",
+   "w": 283,
+   "h": 320
+  },
+  {
+   "id": "carrier_config",
+   "w": 213,
+   "h": 112
+  },
+  {
+   "id": "external_refund",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "archived_inventory_history",
+   "w": 269,
+   "h": 242
+  },
+  {
+   "id": "template_line",
+   "w": 322,
+   "h": 268
+  },
+  {
+   "id": "order_detail",
+   "w": 233,
+   "h": 138
+  },
+  {
+   "id": "v2_claim_history",
+   "w": 268,
+   "h": 190
+  },
+  {
+   "id": "v2_vehicle_item",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "archived_template_meta",
+   "w": 235,
+   "h": 242
+  },
+  {
+   "id": "vehicle_config",
+   "w": 322,
+   "h": 216
+  },
+  {
+   "id": "legacy_project_item",
+   "w": 283,
+   "h": 216
+  },
+  {
+   "id": "subscription_meta",
+   "w": 330,
+   "h": 190
+  },
+  {
+   "id": "staging_carrier_snapshot",
+   "w": 268,
+   "h": 112
+  },
+  {
+   "id": "staging_asset_line",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "invoice_meta",
+   "w": 283,
+   "h": 216
+  },
+  {
+   "id": "customer_template",
+   "w": 213,
+   "h": 268
+  },
+  {
+   "id": "campaign",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "external_document_link",
+   "w": 283,
+   "h": 242
+  },
+  {
+   "id": "archived_inventory_detail",
+   "w": 268,
+   "h": 112
+  },
+  {
+   "id": "invoice_link",
+   "w": 229,
+   "h": 164
+  },
+  {
+   "id": "external_asset_item",
+   "w": 299,
+   "h": 372
+  },
+  {
+   "id": "v2_inventory_snapshot",
+   "w": 227,
+   "h": 112
+  },
+  {
+   "id": "v2_booking_audit",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "legacy_shipment_leg_detail",
+   "w": 269,
+   "h": 86
+  },
+  {
+   "id": "external_template_snapshot",
+   "w": 269,
+   "h": 190
+  },
+  {
+   "id": "tag_line",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "archived_department_line",
+   "w": 330,
+   "h": 268
+  },
+  {
+   "id": "staging_policy",
+   "w": 225,
+   "h": 112
+  },
+  {
+   "id": "external_warehouse_item",
+   "w": 277,
+   "h": 164
+  },
+  {
+   "id": "v2_campaign_item",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "discount_config",
+   "w": 299,
+   "h": 346
+  },
+  {
+   "id": "legacy_channel",
+   "w": 314,
+   "h": 112
+  },
+  {
+   "id": "legacy_asset_meta",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "v2_attachment_meta",
+   "w": 246,
+   "h": 242
+  },
+  {
+   "id": "payment_snapshot",
+   "w": 210,
+   "h": 112
+  },
+  {
+   "id": "staging_channel_item",
+   "w": 218,
+   "h": 242
+  },
+  {
+   "id": "legacy_invoice_detail",
+   "w": 268,
+   "h": 216
+  },
+  {
+   "id": "booking_audit",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "archived_carrier",
+   "w": 189,
+   "h": 164
+  },
+  {
+   "id": "tag_message",
+   "w": 283,
+   "h": 320
+  },
+  {
+   "id": "staging_shipment_item",
+   "w": 227,
+   "h": 112
+  },
+  {
+   "id": "staging_template_link",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "legacy_category_snapshot",
+   "w": 299,
+   "h": 190
+  },
+  {
+   "id": "staging_booking_item",
+   "w": 223,
+   "h": 86
+  },
+  {
+   "id": "external_template_config",
+   "w": 322,
+   "h": 216
+  },
+  {
+   "id": "archived_invoice_item",
+   "w": 246,
+   "h": 86
+  },
+  {
+   "id": "v2_carrier_detail",
+   "w": 215,
+   "h": 86
+  },
+  {
+   "id": "archived_carrier_detail",
+   "w": 244,
+   "h": 112
+  },
+  {
+   "id": "staging_refund_line",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "employee",
+   "w": 221,
+   "h": 112
+  },
+  {
+   "id": "account",
+   "w": 283,
+   "h": 242
+  },
+  {
+   "id": "external_shipment_leg_line",
+   "w": 291,
+   "h": 242
+  },
+  {
+   "id": "external_channel",
+   "w": 229,
+   "h": 112
+  },
+  {
+   "id": "archived_tag_link",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "external_payment_audit",
+   "w": 260,
+   "h": 268
+  },
+  {
+   "id": "refund_config",
+   "w": 229,
+   "h": 294
+  },
+  {
+   "id": "subscription_audit",
+   "w": 201,
+   "h": 164
+  },
+  {
+   "id": "legacy_tag",
+   "w": 215,
+   "h": 86
+  },
+  {
+   "id": "staging_department",
+   "w": 262,
+   "h": 242
+  },
+  {
+   "id": "archived_subscription",
+   "w": 283,
+   "h": 164
+  },
+  {
+   "id": "campaign_config",
+   "w": 226,
+   "h": 138
+  },
+  {
+   "id": "legacy_asset_item",
+   "w": 314,
+   "h": 294
+  },
+  {
+   "id": "inventory_link",
+   "w": 299,
+   "h": 320
+  },
+  {
+   "id": "legacy_shipment_leg_audit",
+   "w": 261,
+   "h": 242
+  },
+  {
+   "id": "external_asset_meta",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "claim_config",
+   "w": 283,
+   "h": 294
+  },
+  {
+   "id": "ticket_history",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "legacy_template",
+   "w": 268,
+   "h": 294
+  },
+  {
+   "id": "external_booking_line",
+   "w": 322,
+   "h": 294
+  },
+  {
+   "id": "refund",
+   "w": 215,
+   "h": 112
+  },
+  {
+   "id": "archived_policy_meta",
+   "w": 299,
+   "h": 138
+  },
+  {
+   "id": "v2_route_item",
+   "w": 229,
+   "h": 242
+  },
+  {
+   "id": "employee_history",
+   "w": 232,
+   "h": 294
+  },
+  {
+   "id": "legacy_contract",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "campaign_detail",
+   "w": 299,
+   "h": 294
+  },
+  {
+   "id": "claim",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "archived_ticket_audit",
+   "w": 283,
+   "h": 268
+  },
+  {
+   "id": "archived_route_history",
+   "w": 235,
+   "h": 242
+  },
+  {
+   "id": "external_review_detail",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "v2_subscription",
+   "w": 181,
+   "h": 164
+  },
+  {
+   "id": "external_notification_history",
+   "w": 295,
+   "h": 138
+  },
+  {
+   "id": "legacy_carrier_snapshot",
+   "w": 283,
+   "h": 242
+  },
+  {
+   "id": "policy_config",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "invoice_history",
+   "w": 268,
+   "h": 242
+  },
+  {
+   "id": "archived_category_meta",
+   "w": 299,
+   "h": 216
+  },
+  {
+   "id": "external_contract_meta",
+   "w": 338,
+   "h": 320
+  },
+  {
+   "id": "legacy_attachment_link",
+   "w": 236,
+   "h": 216
+  },
+  {
+   "id": "subscription",
+   "w": 299,
+   "h": 242
+  },
+  {
+   "id": "message_audit",
+   "w": 299,
+   "h": 164
+  },
+  {
+   "id": "external_booking_link",
+   "w": 283,
+   "h": 190
+  },
+  {
+   "id": "order",
+   "w": 254,
+   "h": 268
+  },
+  {
+   "id": "legacy_task",
+   "w": 314,
+   "h": 190
+  },
+  {
+   "id": "external_document_history",
+   "w": 261,
+   "h": 242
+  },
+  {
+   "id": "v2_notification_line",
+   "w": 299,
+   "h": 216
+  }
+ ],
+ "edges": [
+  {
+   "from": "archived_task_history",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "legacy_category_snapshot",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "legacy_invoice_detail",
+   "to": "notification_line"
+  },
+  {
+   "from": "staging_ticket_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_inventory_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "vendor_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "carrier_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_document_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_channel",
+   "to": "legacy_contract_history"
+  },
+  {
+   "from": "legacy_shipment_leg",
+   "to": "department_tag"
+  },
+  {
+   "from": "external_account_meta",
+   "to": "legacy_audit"
+  },
+  {
+   "from": "customer_template",
+   "to": "order"
+  },
+  {
+   "from": "staging_ticket_history",
+   "to": "legacy_task"
+  },
+  {
+   "from": "policy_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "tag_message",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_tag_link",
+   "to": "external_channel_meta"
+  },
+  {
+   "from": "shipment_item",
+   "to": "policy_item"
+  },
+  {
+   "from": "session_audit",
+   "to": "legacy_invoice_detail"
+  },
+  {
+   "from": "legacy_customer_snapshot",
+   "to": "invoice"
+  },
+  {
+   "from": "external_inventory_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "template_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "booking_link",
+   "to": "shipment_link"
+  },
+  {
+   "from": "legacy_task",
+   "to": "legacy_contract_history"
+  },
+  {
+   "from": "staging_task_snapshot",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_claim_history",
+   "to": "vehicle_history"
+  },
+  {
+   "from": "v2_booking_audit",
+   "to": "v2_message_config"
+  },
+  {
+   "from": "archived_message",
+   "to": "staging_refund_snapshot"
+  },
+  {
+   "from": "invoice_meta",
+   "to": "v2_message_item"
+  },
+  {
+   "from": "route_item",
+   "to": "archived_document"
+  },
+  {
+   "from": "message_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_contract_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "template_line",
+   "to": "external_inventory_audit"
+  },
+  {
+   "from": "external_department_line",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "staging_project_meta",
+   "to": "v2_account_link"
+  },
+  {
+   "from": "v2_claim_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_policy",
+   "to": "archived_document"
+  },
+  {
+   "from": "shipment_leg_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_inventory_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_order_config",
+   "to": "policy_item"
+  },
+  {
+   "from": "channel_meta",
+   "to": "v2_account_link"
+  },
+  {
+   "from": "booking_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "archived_ticket",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "staging_discount",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_campaign_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_attachment_item",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "archived_subscription",
+   "to": "external_contract"
+  },
+  {
+   "from": "campaign_meta",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_discount_item",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_project_history",
+   "to": "v2_message_item"
+  },
+  {
+   "from": "vehicle_history",
+   "to": "staging_shipment_item"
+  },
+  {
+   "from": "external_discount_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "account",
+   "to": "campaign_meta"
+  },
+  {
+   "from": "v2_warehouse",
+   "to": "legacy_vehicle_audit"
+  },
+  {
+   "from": "archived_carrier_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_task_line",
+   "to": "staging_refund"
+  },
+  {
+   "from": "legacy_asset_meta",
+   "to": "archived_carrier"
+  },
+  {
+   "from": "legacy_category_snapshot",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_contract_meta",
+   "to": "archived_ticket"
+  },
+  {
+   "from": "external_discount_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "product_item",
+   "to": "v2_account_link"
+  },
+  {
+   "from": "discount_config",
+   "to": "policy_item"
+  },
+  {
+   "from": "template_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_category_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_route_item",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "discount_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "message_audit",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_channel",
+   "to": "vehicle_item"
+  },
+  {
+   "from": "external_asset_meta",
+   "to": "discount_config"
+  },
+  {
+   "from": "department",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_route_item",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "inventory",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_department",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_review",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_shipment_leg",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "staging_payment_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_customer_item",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_category_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_department_line",
+   "to": "external_discount_history"
+  },
+  {
+   "from": "employee",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_asset_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_task_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_refund_detail",
+   "to": "v2_discount_detail"
+  },
+  {
+   "from": "legacy_project_history",
+   "to": "archived_booking_snapshot"
+  },
+  {
+   "from": "customer_template",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_claim_history",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_carrier_snapshot",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "v2_attachment_meta"
+  },
+  {
+   "from": "archived_inventory_history",
+   "to": "external_task"
+  },
+  {
+   "from": "legacy_vehicle_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_order_history",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_campaign_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_project_config",
+   "to": "task_snapshot"
+  },
+  {
+   "from": "legacy_contract_snapshot",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_shipment_leg_line",
+   "to": "legacy_discount_link"
+  },
+  {
+   "from": "v2_booking_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_audit_detail",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_category_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_inventory_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_refund_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_subscription",
+   "to": "legacy_channel"
+  },
+  {
+   "from": "session_line",
+   "to": "external_asset_snapshot"
+  },
+  {
+   "from": "discount_config",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_audit_audit",
+   "to": "v2_booking_line"
+  },
+  {
+   "from": "archived_document",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "invoice_link"
+  },
+  {
+   "from": "invoice",
+   "to": "policy_item"
+  },
+  {
+   "from": "archived_project_snapshot",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_review_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "legacy_contract_history",
+   "to": "v2_message_config"
+  },
+  {
+   "from": "discount_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "channel_audit",
+   "to": "payment"
+  },
+  {
+   "from": "v2_account_link",
+   "to": "legacy_channel"
+  },
+  {
+   "from": "session_audit",
+   "to": "carrier_config"
+  },
+  {
+   "from": "invoice_shipment",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "v2_message_config",
+   "to": "policy_config"
+  },
+  {
+   "from": "legacy_template",
+   "to": "policy_item"
+  },
+  {
+   "from": "v2_carrier_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_policy",
+   "to": "task_link"
+  },
+  {
+   "from": "invoice_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_contract_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "vehicle_config",
+   "to": "external_template_config"
+  },
+  {
+   "from": "v2_discount_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "invoice_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_campaign_item",
+   "to": "refund_line"
+  },
+  {
+   "from": "policy_history",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_contract_config",
+   "to": "archived_ticket_audit"
+  },
+  {
+   "from": "v2_message_item",
+   "to": "archived_document"
+  },
+  {
+   "from": "refund_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_payment_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_asset_snapshot",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "asset_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_task",
+   "to": "external_audit_audit"
+  },
+  {
+   "from": "vehicle_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "notification_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_refund",
+   "to": "discount_line"
+  },
+  {
+   "from": "channel_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_vehicle_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "booking_meta",
+   "to": "legacy_vendor_item"
+  },
+  {
+   "from": "staging_payment_config",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "product_meta",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_task_history",
+   "to": "carrier_audit"
+  },
+  {
+   "from": "v2_message_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_ticket_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_template_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "subscription_meta",
+   "to": "archived_inventory_detail"
+  },
+  {
+   "from": "channel_audit",
+   "to": "archived_shipment_audit"
+  },
+  {
+   "from": "legacy_project_item",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_project_config",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_booking_line",
+   "to": "staging_attachment_audit"
+  },
+  {
+   "from": "v2_ticket",
+   "to": "subscription_audit"
+  },
+  {
+   "from": "staging_discount_meta",
+   "to": "v2_message_item"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "legacy_category_snapshot"
+  },
+  {
+   "from": "staging_refund_snapshot",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "legacy_contract_history",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_booking_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_notification_config",
+   "to": "template_line"
+  },
+  {
+   "from": "v2_carrier_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "legacy_tag_snapshot",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_shipment_leg_detail",
+   "to": "external_asset_config"
+  },
+  {
+   "from": "staging_vehicle_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_invoice_snapshot",
+   "to": "subscription"
+  },
+  {
+   "from": "external_category_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "category_history",
+   "to": "route_snapshot"
+  },
+  {
+   "from": "legacy_category_snapshot",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_claim_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "refund_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_attachment_line",
+   "to": "customer_meta"
+  },
+  {
+   "from": "legacy_inventory_meta",
+   "to": "archived_ticket"
+  },
+  {
+   "from": "channel_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "v2_message_config",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_refund_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_attachment_audit",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_carrier_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_ticket_item",
+   "to": "order"
+  },
+  {
+   "from": "project",
+   "to": "archived_campaign_snapshot"
+  },
+  {
+   "from": "external_channel_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_shipment_leg_detail",
+   "to": "legacy_project_item"
+  },
+  {
+   "from": "external_payment_audit",
+   "to": "session_snapshot"
+  },
+  {
+   "from": "v2_refund_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_asset_item",
+   "to": "policy_item"
+  },
+  {
+   "from": "message_audit",
+   "to": "external_channel_item"
+  },
+  {
+   "from": "legacy_shipment_leg",
+   "to": "legacy_tag_snapshot"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "campaign"
+  },
+  {
+   "from": "v2_ticket_item",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_review_detail",
+   "to": "external_asset_config"
+  },
+  {
+   "from": "staging_audit",
+   "to": "v2_policy_history"
+  },
+  {
+   "from": "department_line",
+   "to": "v2_notification"
+  },
+  {
+   "from": "subscription",
+   "to": "archived_document"
+  },
+  {
+   "from": "policy_item",
+   "to": "inventory_link"
+  },
+  {
+   "from": "vehicle_config",
+   "to": "external_order_history"
+  },
+  {
+   "from": "vehicle_item",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_customer_config",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "session",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "legacy_order_snapshot",
+   "to": "campaign_config"
+  },
+  {
+   "from": "legacy_policy_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_category_config",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "v2_contract_config",
+   "to": "policy_item"
+  },
+  {
+   "from": "archived_asset",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "product_line",
+   "to": "external_template_snapshot"
+  },
+  {
+   "from": "staging_template_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "v2_campaign_item"
+  },
+  {
+   "from": "route_item",
+   "to": "v2_account_link"
+  },
+  {
+   "from": "template_meta",
+   "to": "order_detail"
+  },
+  {
+   "from": "staging_tag_meta",
+   "to": "ticket_config"
+  },
+  {
+   "from": "notification_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_tag_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_task_line",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_attachment_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_booking_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_discount_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "project",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "invoice_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_task",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "booking_link",
+   "to": "staging_discount_meta"
+  },
+  {
+   "from": "legacy_shipment_leg_audit",
+   "to": "policy_item"
+  },
+  {
+   "from": "v2_audit_audit",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "legacy_contract_snapshot"
+  },
+  {
+   "from": "task_meta",
+   "to": "discount_line"
+  },
+  {
+   "from": "category_audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_review",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_document_history",
+   "to": "category_history"
+  },
+  {
+   "from": "order_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "task_audit",
+   "to": "v2_route_line"
+  },
+  {
+   "from": "task_snapshot",
+   "to": "policy_item"
+  },
+  {
+   "from": "channel_audit",
+   "to": "discount_config"
+  },
+  {
+   "from": "claim",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_order",
+   "to": "v2_audit_audit"
+  },
+  {
+   "from": "booking_meta",
+   "to": "legacy_shipment_leg_detail"
+  },
+  {
+   "from": "archived_department_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_ticket",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "carrier_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_employee",
+   "to": "external_warehouse_item"
+  },
+  {
+   "from": "legacy_booking_history",
+   "to": "contract_meta"
+  },
+  {
+   "from": "external_contract_meta",
+   "to": "external_shipment_leg_line"
+  },
+  {
+   "from": "external_asset_meta",
+   "to": "legacy_vehicle_line"
+  },
+  {
+   "from": "staging_invoice_meta",
+   "to": "invoice_history"
+  },
+  {
+   "from": "legacy_vehicle_line",
+   "to": "v2_attachment_line"
+  },
+  {
+   "from": "audit",
+   "to": "legacy_vendor_item"
+  },
+  {
+   "from": "task_snapshot",
+   "to": "staging_ticket_config"
+  },
+  {
+   "from": "vendor_item",
+   "to": "v2_notification_audit"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "external_document_history"
+  },
+  {
+   "from": "campaign_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "vehicle_snapshot",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "staging_contract_history"
+  },
+  {
+   "from": "staging_task_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "order",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "channel_audit",
+   "to": "notification_line"
+  },
+  {
+   "from": "staging_refund_snapshot",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_account",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_ticket_history",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "asset_detail",
+   "to": "archived_asset"
+  },
+  {
+   "from": "policy_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_tag_meta",
+   "to": "archived_policy_meta"
+  },
+  {
+   "from": "staging_contract_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_project_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "tag_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "v2_route_line",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "category_audit",
+   "to": "external_document_history"
+  },
+  {
+   "from": "project",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "campaign_detail",
+   "to": "v2_task_line"
+  },
+  {
+   "from": "legacy_attachment_link",
+   "to": "policy_config"
+  },
+  {
+   "from": "review",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_task_history",
+   "to": "policy_item"
+  },
+  {
+   "from": "vehicle_item",
+   "to": "staging_refund_snapshot"
+  },
+  {
+   "from": "department",
+   "to": "policy_item"
+  },
+  {
+   "from": "asset_detail",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "department",
+   "to": "audit"
+  },
+  {
+   "from": "v2_message_item",
+   "to": "legacy_booking_link"
+  },
+  {
+   "from": "v2_task",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_department_line",
+   "to": "v2_booking_line"
+  },
+  {
+   "from": "vendor_config",
+   "to": "v2_notification_audit"
+  },
+  {
+   "from": "archived_employee",
+   "to": "v2_ticket"
+  },
+  {
+   "from": "v2_category_line",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_carrier_snapshot",
+   "to": "archived_document"
+  },
+  {
+   "from": "employee_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_invoice_meta",
+   "to": "session_line"
+  },
+  {
+   "from": "discount_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "asset_line",
+   "to": "inventory"
+  },
+  {
+   "from": "archived_asset",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_tag_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_template_snapshot",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_asset_item",
+   "to": "external_warehouse_item"
+  },
+  {
+   "from": "shipment_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_audit_detail",
+   "to": "ticket_config"
+  },
+  {
+   "from": "category",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_task_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_notification_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "booking_audit",
+   "to": "v2_carrier_detail"
+  },
+  {
+   "from": "legacy_order_snapshot",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_ticket_item",
+   "to": "department_tag"
+  },
+  {
+   "from": "staging_refund_history",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_ticket_history",
+   "to": "session_audit"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "external_shipment_leg_line"
+  },
+  {
+   "from": "archived_customer_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "session_meta",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_department",
+   "to": "category_meta"
+  },
+  {
+   "from": "external_order_history",
+   "to": "external_asset_meta"
+  },
+  {
+   "from": "notification_line",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "ticket_config",
+   "to": "staging_tag_meta"
+  },
+  {
+   "from": "external_booking_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_notification_line",
+   "to": "external_asset_config"
+  },
+  {
+   "from": "shipment",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_project_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "task_link",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_vehicle_line",
+   "to": "external_attachment"
+  },
+  {
+   "from": "archived_asset",
+   "to": "route_snapshot"
+  },
+  {
+   "from": "v2_notification_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_attachment_audit",
+   "to": "notification_meta"
+  },
+  {
+   "from": "external_claim_history",
+   "to": "external_campaign_link"
+  },
+  {
+   "from": "external_asset_item",
+   "to": "legacy_department"
+  },
+  {
+   "from": "category_meta",
+   "to": "external_document"
+  },
+  {
+   "from": "v2_review_item",
+   "to": "external_notification_history"
+  },
+  {
+   "from": "staging_tag_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "inventory_line",
+   "to": "v2_ticket_item"
+  },
+  {
+   "from": "external_review_detail",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "policy_item"
+  },
+  {
+   "from": "message_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "review",
+   "to": "external_channel_item"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_asset_snapshot",
+   "to": "department_tag"
+  },
+  {
+   "from": "payment",
+   "to": "external_discount_history"
+  },
+  {
+   "from": "external_document",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_review_detail",
+   "to": "v2_discount_item"
+  },
+  {
+   "from": "task_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "discount_line",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "archived_category_meta",
+   "to": "employee"
+  },
+  {
+   "from": "legacy_tag_snapshot",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_order_snapshot",
+   "to": "v2_inventory_snapshot"
+  },
+  {
+   "from": "staging_discount_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_task_history",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_refund_line",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_attachment",
+   "to": "ticket_config"
+  },
+  {
+   "from": "v2_notification",
+   "to": "staging_audit_detail"
+  },
+  {
+   "from": "vendor_item",
+   "to": "v2_booking_line"
+  },
+  {
+   "from": "external_template_config",
+   "to": "legacy_contract_snapshot"
+  },
+  {
+   "from": "staging_discount",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_refund",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_refund_snapshot",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "order_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_project_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "vendor_item",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_asset_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "legacy_template",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_refund",
+   "to": "legacy_project_history"
+  },
+  {
+   "from": "booking_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "subscription",
+   "to": "archived_subscription"
+  },
+  {
+   "from": "product_line",
+   "to": "legacy_booking_history"
+  },
+  {
+   "from": "inventory_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "customer_meta",
+   "to": "subscription_audit"
+  },
+  {
+   "from": "external_ticket_meta",
+   "to": "staging_vehicle_snapshot"
+  },
+  {
+   "from": "department_line",
+   "to": "v2_task"
+  },
+  {
+   "from": "subscription_link",
+   "to": "archived_booking_snapshot"
+  },
+  {
+   "from": "order_item",
+   "to": "legacy_audit"
+  },
+  {
+   "from": "archived_order_config",
+   "to": "task_link"
+  },
+  {
+   "from": "external_channel_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_category_config",
+   "to": "external_payment_audit"
+  },
+  {
+   "from": "staging_attachment_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_contract",
+   "to": "v2_account_link"
+  },
+  {
+   "from": "legacy_asset_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_customer_config",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "v2_contract_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "invoice",
+   "to": "shipment_leg_history"
+  },
+  {
+   "from": "external_document_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "invoice_shipment",
+   "to": "archived_document"
+  },
+  {
+   "from": "claim_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "legacy_invoice_detail",
+   "to": "ticket_history"
+  },
+  {
+   "from": "archived_contract",
+   "to": "external_category_config"
+  },
+  {
+   "from": "v2_ticket_item",
+   "to": "external_channel_meta"
+  },
+  {
+   "from": "session_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "invoice",
+   "to": "product_item"
+  },
+  {
+   "from": "legacy_discount_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_employee",
+   "to": "archived_booking_snapshot"
+  },
+  {
+   "from": "product_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "product_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_order_history",
+   "to": "archived_tag_link"
+  },
+  {
+   "from": "v2_route_line",
+   "to": "policy_item"
+  },
+  {
+   "from": "v2_account_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_campaign_config",
+   "to": "category"
+  },
+  {
+   "from": "discount_link",
+   "to": "external_channel"
+  },
+  {
+   "from": "booking_audit",
+   "to": "v2_route_line"
+  },
+  {
+   "from": "archived_subscription",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_campaign_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "invoice",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_contract_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_payment_config",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_shipment",
+   "to": "external_route"
+  },
+  {
+   "from": "staging_carrier_audit",
+   "to": "external_attachment"
+  },
+  {
+   "from": "v2_message_config",
+   "to": "v2_notification"
+  },
+  {
+   "from": "external_route",
+   "to": "legacy_attachment"
+  },
+  {
+   "from": "ticket_history",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "staging_task_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "session_line",
+   "to": "invoice"
+  },
+  {
+   "from": "v2_message_config",
+   "to": "external_carrier_config"
+  },
+  {
+   "from": "employee_link",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_campaign_snapshot",
+   "to": "v2_customer_item"
+  },
+  {
+   "from": "staging_audit_detail",
+   "to": "policy_item"
+  },
+  {
+   "from": "notification_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_ticket_config",
+   "to": "asset_detail"
+  },
+  {
+   "from": "campaign_detail",
+   "to": "archived_carrier"
+  },
+  {
+   "from": "document_item",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "employee_history",
+   "to": "v2_invoice"
+  },
+  {
+   "from": "external_account",
+   "to": "order_link"
+  },
+  {
+   "from": "shipment_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_subscription",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "discount_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "legacy_vendor_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "policy_history",
+   "to": "staging_task_history"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_vehicle_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "archived_tag_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_contract_history",
+   "to": "v2_refund_detail"
+  },
+  {
+   "from": "discount_config",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "legacy_route",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_audit_detail",
+   "to": "staging_tag_meta"
+  },
+  {
+   "from": "external_asset_item",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_booking_link",
+   "to": "v2_task"
+  },
+  {
+   "from": "legacy_asset_item",
+   "to": "staging_payment_config"
+  },
+  {
+   "from": "shipment_meta",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_booking_snapshot",
+   "to": "staging_document_audit"
+  },
+  {
+   "from": "external_account_meta",
+   "to": "external_template_config"
+  },
+  {
+   "from": "external_asset_config",
+   "to": "archived_order_config"
+  },
+  {
+   "from": "external_project_config",
+   "to": "staging_document_audit"
+  },
+  {
+   "from": "external_template_config",
+   "to": "policy_item"
+  },
+  {
+   "from": "review",
+   "to": "discount_line"
+  },
+  {
+   "from": "employee_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_inventory_history",
+   "to": "policy_item"
+  },
+  {
+   "from": "v2_refund_detail",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "staging_template_link"
+  },
+  {
+   "from": "external_booking_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "legacy_asset_item",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_shipment_leg_detail",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "account_line",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_discount_history",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "external_contract_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "notification_line",
+   "to": "campaign_detail"
+  },
+  {
+   "from": "category_meta",
+   "to": "category"
+  },
+  {
+   "from": "vehicle_config",
+   "to": "archived_ticket_line"
+  },
+  {
+   "from": "staging_task_history",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_booking_link",
+   "to": "legacy_shipment_leg_audit"
+  },
+  {
+   "from": "external_document_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_attachment_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_order_history",
+   "to": "template_line"
+  },
+  {
+   "from": "session",
+   "to": "legacy_tag"
+  },
+  {
+   "from": "claim",
+   "to": "booking_meta"
+  },
+  {
+   "from": "employee_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_refund",
+   "to": "staging_contract_history"
+  },
+  {
+   "from": "archived_department_line",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_discount_link",
+   "to": "legacy_booking_link"
+  },
+  {
+   "from": "external_campaign_link",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_campaign_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_policy_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "claim_config",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "staging_template_link",
+   "to": "v2_message_item"
+  },
+  {
+   "from": "legacy_contract",
+   "to": "v2_category_line"
+  },
+  {
+   "from": "external_template_snapshot",
+   "to": "v2_route_item"
+  },
+  {
+   "from": "legacy_inventory_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_discount_detail",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_refund",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_contract_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "v2_message_item",
+   "to": "external_inventory_link"
+  },
+  {
+   "from": "archived_inventory_detail",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_shipment_audit",
+   "to": "tag_line"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "category_meta",
+   "to": "department_line"
+  },
+  {
+   "from": "archived_campaign_snapshot",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_ticket",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "notification_audit",
+   "to": "v2_vehicle_item"
+  },
+  {
+   "from": "contract_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "discount_config",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "archived_contract",
+   "to": "v2_route_item"
+  },
+  {
+   "from": "external_asset_snapshot",
+   "to": "shipment_leg_link"
+  },
+  {
+   "from": "external_template_snapshot",
+   "to": "archived_document"
+  },
+  {
+   "from": "account_line",
+   "to": "customer_template"
+  },
+  {
+   "from": "v2_notification",
+   "to": "external_attachment"
+  },
+  {
+   "from": "archived_customer_config",
+   "to": "v2_discount_item"
+  },
+  {
+   "from": "legacy_tag_snapshot",
+   "to": "legacy_contract_snapshot"
+  },
+  {
+   "from": "external_review",
+   "to": "v2_order_config"
+  },
+  {
+   "from": "external_carrier_config",
+   "to": "external_channel_meta"
+  },
+  {
+   "from": "customer_review",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_attachment_link",
+   "to": "contract_meta"
+  },
+  {
+   "from": "legacy_inventory_meta",
+   "to": "external_ticket_meta"
+  },
+  {
+   "from": "category_history",
+   "to": "external_template_config"
+  },
+  {
+   "from": "invoice_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_inventory_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_vehicle_item",
+   "to": "legacy_department"
+  },
+  {
+   "from": "legacy_booking_link",
+   "to": "customer_review"
+  },
+  {
+   "from": "legacy_tag_meta",
+   "to": "department_tag"
+  },
+  {
+   "from": "external_attachment",
+   "to": "legacy_template"
+  },
+  {
+   "from": "v2_invoice",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_vehicle_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "refund_config",
+   "to": "claim_config"
+  },
+  {
+   "from": "order_link",
+   "to": "vendor_item"
+  },
+  {
+   "from": "archived_policy_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_vehicle_meta",
+   "to": "contract_meta"
+  },
+  {
+   "from": "archived_document",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "booking_audit",
+   "to": "policy_item"
+  },
+  {
+   "from": "payment_audit",
+   "to": "ticket_history"
+  },
+  {
+   "from": "invoice_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_notification_history",
+   "to": "v2_category_line"
+  },
+  {
+   "from": "campaign",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_template",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "tag_message",
+   "to": "session_line"
+  },
+  {
+   "from": "external_asset_meta",
+   "to": "document_audit"
+  },
+  {
+   "from": "legacy_booking_history",
+   "to": "policy_item"
+  },
+  {
+   "from": "archived_contract_meta",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_notification_line",
+   "to": "external_ticket_meta"
+  },
+  {
+   "from": "legacy_contract",
+   "to": "policy_item"
+  },
+  {
+   "from": "shipment_item",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "task_snapshot",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_claim_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "staging_vehicle_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "booking_meta",
+   "to": "contract_meta"
+  },
+  {
+   "from": "legacy_discount_link",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_route_history",
+   "to": "payment"
+  },
+  {
+   "from": "legacy_contract",
+   "to": "refund"
+  },
+  {
+   "from": "external_carrier_config",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "invoice",
+   "to": "v2_notification_line"
+  },
+  {
+   "from": "tag_message",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "v2_notification_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "archived_shipment_audit",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "asset_line",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_invoice_meta",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_document_link",
+   "to": "policy_item"
+  },
+  {
+   "from": "staging_task_history",
+   "to": "session_meta"
+  },
+  {
+   "from": "external_inventory_audit",
+   "to": "employee_link"
+  },
+  {
+   "from": "inventory_line",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "archived_policy_meta",
+   "to": "shipment_leg_history"
+  },
+  {
+   "from": "v2_account_link",
+   "to": "department"
+  },
+  {
+   "from": "booking_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "department_line",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_campaign_link",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_review",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "payment_audit",
+   "to": "staging_inventory_audit"
+  },
+  {
+   "from": "category_history",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_task_history",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "legacy_vehicle_line",
+   "to": "message_link"
+  },
+  {
+   "from": "external_refund",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "external_inventory_audit",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_contract_config",
+   "to": "session"
+  },
+  {
+   "from": "external_attachment",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "category_audit",
+   "to": "session_snapshot"
+  },
+  {
+   "from": "external_asset_config",
+   "to": "department_line"
+  },
+  {
+   "from": "discount_link",
+   "to": "session_audit"
+  },
+  {
+   "from": "campaign_detail",
+   "to": "staging_template_link"
+  },
+  {
+   "from": "archived_message",
+   "to": "policy_item"
+  },
+  {
+   "from": "vehicle_snapshot",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "policy_history",
+   "to": "campaign_detail"
+  },
+  {
+   "from": "department",
+   "to": "legacy_customer_snapshot"
+  },
+  {
+   "from": "category_meta",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "discount_config",
+   "to": "order_item"
+  },
+  {
+   "from": "v2_refund_detail",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "campaign",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "legacy_contract",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "audit",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "account",
+   "to": "external_asset_meta"
+  },
+  {
+   "from": "ticket_history",
+   "to": "archived_document"
+  },
+  {
+   "from": "v2_notification_audit",
+   "to": "external_shipment_leg_line"
+  },
+  {
+   "from": "legacy_project_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_project_config",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "v2_carrier_line",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "product_item",
+   "to": "archived_document"
+  },
+  {
+   "from": "external_channel_item",
+   "to": "staging_refund_line"
+  },
+  {
+   "from": "campaign_detail",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_refund_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "category_audit",
+   "to": "booking_link"
+  },
+  {
+   "from": "refund_line",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "archived_message",
+   "to": "v2_review_item"
+  },
+  {
+   "from": "booking_meta",
+   "to": "legacy_category_snapshot"
+  },
+  {
+   "from": "archived_booking_snapshot",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "document_audit",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "campaign_meta",
+   "to": "booking_audit"
+  },
+  {
+   "from": "notification_meta",
+   "to": "v2_notification"
+  },
+  {
+   "from": "external_document",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "staging_carrier_audit",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "discount_link",
+   "to": "v2_ticket_item"
+  },
+  {
+   "from": "task_meta",
+   "to": "policy_item"
+  },
+  {
+   "from": "archived_ticket_audit",
+   "to": "policy_item"
+  },
+  {
+   "from": "external_inventory_link",
+   "to": "v2_warehouse"
+  },
+  {
+   "from": "v2_task_line",
+   "to": "document_audit"
+  },
+  {
+   "from": "campaign_meta",
+   "to": "shipment_leg_link"
+  },
+  {
+   "from": "notification_meta",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "legacy_order_snapshot",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "category_audit",
+   "to": "legacy_tag"
+  },
+  {
+   "from": "v2_claim_audit",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "inventory_link",
+   "to": "staging_task_snapshot"
+  },
+  {
+   "from": "discount_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "invoice_audit",
+   "to": "policy_item"
+  },
+  {
+   "from": "category",
+   "to": "v2_discount_item"
+  },
+  {
+   "from": "channel_audit",
+   "to": "archived_document"
+  },
+  {
+   "from": "ticket_history",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "external_asset_item",
+   "to": "archived_order_meta"
+  },
+  {
+   "from": "staging_refund_history",
+   "to": "staging_refund_line"
+  },
+  {
+   "from": "shipment_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "invoice_history",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "staging_document_audit",
+   "to": "legacy_vehicle_snapshot"
+  },
+  {
+   "from": "staging_template_link",
+   "to": "v2_vehicle"
+  },
+  {
+   "from": "external_claim_history",
+   "to": "archived_document"
+  }
+ ]
+}

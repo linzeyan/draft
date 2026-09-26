@@ -1,0 +1,29 @@
+TABLE customer  name@357..365  body@368..1023
+  COL customer_id    smallint unsigned            pk,nn        name@372..383  type@385..402
+  COL store_id       tinyint unsigned             nn,fk        name@431..439  type@441..457
+  COL first_name     varchar(45)                  nn           name@471..481  type@483..494
+  COL last_name      varchar(45)                  nn           name@508..517  type@519..530
+  COL email          varchar(50)                  uq           name@544..549  type@551..562
+  COL active         tinyint(1)                   nn           name@580..586  type@588..598
+  COL notes          text                         -            name@624..629  type@631..635
+  COL create_date    datetime                     nn           name@704..715  type@717..725
+  IDX idx_email      unique   (email)
+  IDX idx_fk_store_id -        (store_id)
+  IDX idx_names      -        (first_name,last_name)
+  SELF customer      @1427..1435
+  REF customer_id    @752..763
+  REF email          @794..799
+  REF store_id       @829..837
+  REF first_name     @870..880
+  REF last_name      @883..892
+  REF store_id       @943..951
+  REF customer_id    @1439..1450
+TABLE payment  name@1138..1145  body@1148..1453
+  COL payment_id     smallint unsigned            pk,nn        name@1152..1162  type@1164..1181
+  COL customer_id    smallint unsigned            nn,fk        name@1210..1221  type@1223..1240
+  COL amount         decimal(5,2)                 nn           name@1254..1260  type@1262..1275
+  COL payment_date   datetime                     nn           name@1289..1301  type@1303..1311
+  REF payment_id     @1338..1348
+  REF customer_id    @1401..1412
+REL customer(store_id) -> store(store_id)  1:n  [undefined target]
+REL payment(customer_id) -> customer(customer_id)  1:n

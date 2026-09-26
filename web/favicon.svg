@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="draft">
+  <rect width="32" height="32" rx="7" fill="#1e5fd0"/>
+  <!-- Two tables and the relation between them: the smallest true picture of
+       what this draws, still legible at 16 pixels. -->
+  <path d="M14 16h4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="4" y="7" width="10" height="18" rx="2" fill="#fff"/>
+  <rect x="18" y="7" width="10" height="18" rx="2" fill="#fff"/>
+  <path d="M4 12h10M18 12h10" stroke="#1e5fd0" stroke-width="1.6"/>
+</svg>

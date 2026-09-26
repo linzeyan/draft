@@ -1,0 +1,19 @@
+TABLE notebook  name@155..163  body@166..285
+  COL id             integer                      pk           name@170..172  type@179..186
+  COL title          text                         nn,uq        name@203..208  type@212..216
+  COL created        integer                      -            name@237..244  type@246..253
+  SELF notebook      @412..420
+  REF id             @423..425
+TABLE note  name@317..321  body@324..512
+  COL id             integer                      pk           name@328..330  type@341..348
+  COL notebook_id    integer                      fk           name@379..390  type@392..399
+  COL body           text                         nn           name@450..454  type@463..467
+  COL pinned         boolean                      -            name@481..487  type@494..501
+  IDX note_notebook  -        (notebook_id)
+  SELF note          @579..583
+  REF notebook_id    @584..595
+TABLE tagless  name@529..536  body@538..545
+  COL a              -                            -            name@538..539  type@-
+  COL b              -                            -            name@541..542  type@-
+  COL c              -                            -            name@544..545  type@-
+REL note(notebook_id) -> notebook(id)  1:n

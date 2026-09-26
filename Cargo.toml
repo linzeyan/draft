@@ -1,0 +1,25 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "spikes/layout-eval"]
+# The size probes are deliberately detached workspaces: cargo unifies features
+# across members, which would merge the glow and wgpu feature sets and make
+# every size measurement wrong.
+exclude = ["spikes/size"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "MIT"
+rust-version = "1.97"
+repository = "https://github.com/linzeyan/draft"
+
+# Tuned for the shipped wasm module, which is the binary that actually has a
+# size budget (docs/spec.md). Native benchmarks want speed instead and override
+# opt-level via the environment rather than adding a second profile -- see the
+# Makefile. Keeping one profile means `target/release/<bin>` stays the only
+# output path, so no script or CI reference has to change.
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+strip = true

@@ -1,0 +1,65 @@
+[package]
+name = "draft-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "The draft application, for the browser and the desktop"
+
+# One binary for both targets, with the entry point behind a cfg. A cdylib would
+# give trunk two wasm artifacts to choose between; a bin gives it one, and the
+# same crate still builds a desktop executable.
+[[bin]]
+name = "draft-app"
+path = "src/main.rs"
+
+[dependencies]
+draft-ddl = { path = "../ddl" }
+draft-model = { path = "../model" }
+draft-layout = { path = "../layout", features = ["serde"] }
+draft-view = { path = "../view" }
+draft-export = { path = "../export" }
+
+# `glow` (WebGL2) rather than the default `wgpu`: measured at 705 K brotli
+# against 1196 K, because wgpu transpiles its WGSL shaders to GLSL through
+# `naga`, which has to be able to transpile anything. See docs/measurements.md
+# S1 and docs/architecture.md D3.
+#
+# `default_fonts` is off for the same reason — egui's bundled set is 671 K
+# brotli, most of it two emoji fonts this application never draws. The faces
+# this application does register come from `draft_view::fonts`, which the CLI
+# also calls, so the two cannot disagree about geometry (D4).
+#
+# `egui` is listed with default features OFF for that last reason: cargo unifies
+# features across a dependency graph, so a plain `egui = "0.36"` here would
+# switch `default_fonts` back on underneath eframe and quietly undo the saving.
+eframe = { version = "0.36.2", default-features = false, features = ["glow", "persistence"] }
+egui = { version = "0.36.2", default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Raw deflate for share links. Already in the tree by way of eframe, so the
+# payload pays only for the code that is actually reached.
+miniz_oxide = "0.8"
+# `std::time::Instant` panics on wasm32-unknown-unknown, and the frame that can
+# miss its deadline is the one we most need to time. Already in the tree via
+# eframe, so it costs nothing in payload.
+web-time = "1"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+web-sys = { version = "0.3", features = [
+    "Window", "Document", "Element", "HtmlCanvasElement", "HtmlElement",
+    "HtmlInputElement", "HtmlAnchorElement", "Location", "History", "Blob",
+    "BlobPropertyBag", "Url", "File", "FileList", "FileReader", "Event",
+    "Response", "Headers", "console",
+] }
+js-sys = "0.3"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# Window-system backends only the desktop build needs. Cargo merges these
+# features with the entry above rather than replacing it.
+eframe = { version = "0.36.2", default-features = false, features = ["wayland", "x11"] }
+# `xdg-portal` keeps the Linux build off GTK; `tokio` is what the portal backend
+# needs to drive its D-Bus calls.
+rfd = { version = "0.15", default-features = false, features = ["xdg-portal", "tokio"] }

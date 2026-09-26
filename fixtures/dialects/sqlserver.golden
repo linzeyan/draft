@@ -1,0 +1,17 @@
+TABLE Customer  name@169..177  body@179..399
+  COL CustomerId     int                          pk,nn        name@185..195  type@197..202
+  COL FirstName      nvarchar(40)                 nn           name@232..241  type@243..257
+  COL Email          nvarchar(60)                 -            name@273..278  type@280..294
+  COL SupportRepId   int                          -            name@306..318  type@320..325
+  SELF customer      @774..782
+  REF customerid     @382..392
+  REF customerid     @786..796
+TABLE Invoice  name@423..430  body@432..658
+  COL InvoiceId      int                          pk,nn        name@438..447  type@449..454
+  COL CustomerId     int                          nn,fk        name@484..494  type@496..501
+  COL BillingAddress nvarchar(70)                 -            name@517..531  type@533..547
+  COL Total          numeric(10,2)                nn           name@559..564  type@566..582
+  SELF invoice       @681..688
+  REF invoiceid      @642..651
+  REF customerid     @743..753
+REL Invoice(CustomerId) -> Customer(CustomerId)  1:n

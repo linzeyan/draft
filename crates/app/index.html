@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>draft — SQL schema diagrams</title>
+    <meta
+      name="description"
+      content="Paste a SQL schema and read it as a diagram. Runs entirely in your browser; nothing is uploaded."
+    />
+    <!-- Copied in rather than duplicated: web/site.mjs serves the same file at
+         the site root, and one icon that is wrong in one place is worse than
+         none. Relative href for the same reason public_url is relative. -->
+    <link data-trunk rel="copy-file" href="../../web/favicon.svg" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- Copied, not preloaded and not linked: the CJK face is 16.4 MB, and the
+         application fetches it only once the text on screen turns out to need
+         it. A `rel="preload"` here would hand that 16.4 MB to every visitor,
+         which is the entire thing this is arranged to avoid. -->
+    <link data-trunk rel="copy-file" href="../view/assets/NotoSansCJKtc-Regular.otf" />
+    <!-- The OFL requires the licence to travel with the font wherever it is
+         redistributed, and serving it over HTTP is redistribution. -->
+    <link data-trunk rel="copy-file" href="../view/assets/NotoSansCJK-LICENSE.txt" />
+    <style>
+      :root {
+        color-scheme: dark light;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: #15181d;
+      }
+      /* Absolute positioning matters: a canvas sized only by CSS percentages
+         takes its layout size from its own backing store, which eframe drives
+         from a ResizeObserver on that same layout size. The two then feed each
+         other and the canvas grows without bound — it reached 16777216px in the
+         Phase 0 spike before this was pinned down. Positioning it against the
+         viewport breaks the loop. */
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        /* Every touch gesture over the diagram is ours: one finger pans, two
+           zoom. eframe calls preventDefault in its touch handlers, but Chrome
+           registers document-level touchmove listeners as passive, where that
+           call does nothing — so the browser would still get to act on the
+           gesture, and on Android a drag downwards is pull-to-refresh. This says
+           it in CSS, where passiveness cannot apply. */
+        touch-action: none;
+      }
+      /* Hidden from sight, present in the accessibility tree. `display: none`
+         and `visibility: hidden` would take it out of both, which is the whole
+         thing this has to avoid. */
+      .offscreen {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      #loading {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 400 14px/1.4 ui-sans-serif, system-ui, sans-serif;
+        color: #7a8696;
+      }
+    </style>
+    <!-- `-Oz` because the payload budget is the binding constraint, not startup
+         CPU. The explicit feature flags are not optional: rustc emits
+         bulk-memory and sign-extension opcodes for wasm32 by default, and
+         wasm-opt refuses to validate a module using features it was not told
+         about. -->
+    <link
+      data-trunk
+      rel="rust"
+      data-wasm-opt="z"
+      data-wasm-opt-params="--enable-bulk-memory --enable-sign-ext --enable-mutable-globals --enable-nontrapping-float-to-int --enable-reference-types --enable-multivalue"
+    />
+  </head>
+  <body>
+    <!-- The page's only text. A canvas contains none: without these two
+         elements a screen reader finds nothing to read here, a translator
+         nothing to translate, and `document.body.innerText` is empty. The
+         heading is static; `#schema` is rewritten by the wasm on every re-parse
+         (crates/app/src/mirror.rs) and is empty until the first one. Before the
+         canvas, so it is the first thing reached rather than the last. -->
+    <h1 class="offscreen">draft — read a SQL schema as an ER diagram</h1>
+    <section class="offscreen" id="schema" aria-label="The schema, as text"></section>
+    <canvas id="canvas"></canvas>
+    <div id="loading">Loading…</div>
+    <!-- The browser's find bar cannot see a word of this page: the diagram and
+         the SQL pane are both painted into the canvas. The application answers
+         the same key with a find box that can (crates/app/src/find.rs), so the
+         native bar is suppressed rather than left to open over it and find
+         nothing. This has to be done in script: eframe 0.36 decides for itself
+         which keys to prevent the default action for (`should_prevent_default`
+         is consulted for pointer events, not key events) and Ctrl+F is not one
+         of them. Capture phase and no `stopPropagation`, so the keypress still
+         reaches eframe's own listener. -->
+    <script>
+      addEventListener(
+        "keydown",
+        (event) => {
+          const find = event.key === "f" && (event.ctrlKey || event.metaKey);
+          if (find && !event.altKey) {
+            event.preventDefault();
+          }
+        },
+        { capture: true },
+      );
+    </script>
+  </body>
+</html>

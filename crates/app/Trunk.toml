@@ -1,0 +1,11 @@
+[build]
+target = "index.html"
+dist = "dist"
+# Relative, not "/": the same bundle is served at the root by web/serve.mjs for
+# every measurement, and at /app/ by the deployed site. Absolute asset paths
+# would work in exactly one of those two places.
+public_url = "./"
+
+[serve]
+address = "127.0.0.1"
+port = 8080
