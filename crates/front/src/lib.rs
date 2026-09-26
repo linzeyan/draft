@@ -274,7 +274,9 @@ impl Session {
             ));
         }
         let rects: Vec<Rect> = boxes
-            .chunks_exact(4)
+            .as_chunks::<4>()
+            .0
+            .iter()
             .map(|b| Rect {
                 x: b[0],
                 y: b[1],
@@ -709,7 +711,9 @@ mod tests {
         for (first, count) in [(0, 1), (1, 1), (0, 3), (1, 2), (2, 9)] {
             let window = highlight_lines(sql, first, count);
             let text: String = window
-                .chunks_exact(2)
+                .as_chunks::<2>()
+                .0
+                .iter()
                 .map(|pair| pair[1].as_str())
                 .collect();
             let wanted: String = lines

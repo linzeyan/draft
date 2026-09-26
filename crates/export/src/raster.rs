@@ -137,7 +137,7 @@ impl Buffer {
     }
 
     fn draw(&mut self, mesh: &Mesh, atlas: &ColorImage) {
-        for triangle in mesh.indices.chunks_exact(3) {
+        for triangle in mesh.indices.as_chunks::<3>().0 {
             let Some(v) = triangle
                 .iter()
                 .map(|&i| mesh.vertices.get(i as usize))
