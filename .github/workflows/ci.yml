@@ -25,7 +25,7 @@ jobs:
       CARGO_PROFILE_RELEASE_LTO: "false"
       CARGO_PROFILE_RELEASE_CODEGEN_UNITS: "16"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
@@ -38,15 +38,18 @@ jobs:
     name: Budgets
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: wasm32-unknown-unknown
       - uses: Swatinem/rust-cache@v2
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
-      - uses: jetli/trunk-action@v0.5.0
+      # jetli/trunk-action never left Node 20; this is the same release binary
+      # it installed, minus the action.
+      - name: Install trunk
+        run: curl -fsSL https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xz -C "$HOME/.cargo/bin"
 
       # Payload, parse time and layout time. Fails the build when one is
       # exceeded, so a regression arrives with a name and a number.
@@ -57,7 +60,7 @@ jobs:
       # parses and draws all five.
       - run: make site
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: site
           path: web/dist
@@ -71,7 +74,7 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - name: Window-system dependencies
@@ -82,7 +85,7 @@ jobs:
       - name: Build and package
         shell: bash
         run: make desktop
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: draft-${{ matrix.os }}
           path: |
